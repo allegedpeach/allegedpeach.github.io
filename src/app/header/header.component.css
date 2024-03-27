@@ -1,14 +1,10 @@
 mat-toolbar {
   position: sticky;
-  top: 0;
-  z-index: 100;
   background: rgb(238, 211, 217);
 }
 
-ul {
-  li {
-    list-style: none;
-  }
+li {
+  list-style: none;
 }
 
 button {
@@ -19,20 +15,24 @@ button {
 
 .row {
   margin-left: auto;
-}
-
-.user-image {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-}
-
-.image-name {
+  height: 100%;
   display: flex;
-  align-items: center;
-  font-size: 14px;
+  align-items: flex-end;
 }
 
-.user-name {
-  padding-left: 15px;
+.user {
+  .user-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .image-name {
+    font-size: 14px;
+  }
+
+  .user-name {
+    padding-left: 15px;
+  }
 }
+
