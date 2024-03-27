@@ -5,12 +5,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HexaComponent } from './hexa/hexa.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { InformationComponent } from './information/information.component';
+import { IncomeComponent } from './income/income.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'hexa', component: HexaComponent },
+  { path: 'income', component: IncomeComponent },
   { path: 'schedule', component: ScheduleComponent },
   { path: 'information', component: InformationComponent },
 ];
