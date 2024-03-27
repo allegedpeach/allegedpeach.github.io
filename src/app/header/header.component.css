@@ -1,0 +1,38 @@
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgb(238, 211, 217);
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+button {
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.row {
+  margin-left: auto;
+}
+
+.user-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.image-name {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.user-name {
+  padding-left: 15px;
+}
