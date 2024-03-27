@@ -1,24 +1,43 @@
 <mat-toolbar>
-  <mat-toolbar-row class="justify-content-between">
-    <button mat-icon-button (click)="toggleSidebar()"><mat-icon>menu</mat-icon></button>
-    <div class="row">
-      <ul>
-        <li>
-          <button mat-button [matMenuTriggerFor]="menu" class="user">
-            <div class="image-name">
-              <img src="assets/pfp.png" alt="" class="user-image">
-              <span class="user-name">Name</span>
-            </div>
-            <mat-icon class="user-image-icon">keyboard_arrow_down</mat-icon>
-            <mat-menu #menu="matMenu">
-              <button mat-menu-item>
-                <mat-icon>exit_to_app</mat-icon>
-                Logout
-              </button>
-            </mat-menu>
-          </button>
-        </li>
-      </ul>
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="toggleSidebar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <div class="centered-buttons">
+      <button mat-icon-button matTooltip="Official News" (click)="openNewsLink()">
+        <mat-icon class="center-button-icons">newspaper</mat-icon>
+      </button>
+
+      <button mat-icon-button matTooltip="Sunny Sunday">
+        <mat-icon class="center-button-icons">calendar_month</mat-icon>
+      </button>
+
+      <button mat-icon-button matTooltip="Help">
+        <mat-icon class="center-button-icons">help</mat-icon>
+      </button>
     </div>
+
+    <div class="row">
+      <button mat-button [matMenuTriggerFor]="menu" class="user">
+        <div class="image-name">
+          <img src="assets/pfp.png" alt="" class="user-image">
+          <span class="user-name">Name</span>
+        </div>
+
+        <mat-icon class="user-image-icon">keyboard_arrow_down</mat-icon>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item class="profileSettings">
+            <mat-icon>manage_accounts</mat-icon>
+            Manage Profile
+          </button>
+          <button mat-menu-item class="profileSettings">
+            <mat-icon>exit_to_app</mat-icon>
+            Sign Out
+          </button>
+        </mat-menu>
+      </button>
+    </div>
+
   </mat-toolbar-row>
 </mat-toolbar>

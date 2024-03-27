@@ -7,8 +7,14 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent {
   @Output() toggleSidebarForMe: EventEmitter<any> = new EventEmitter();
+
   constructor() {}
+
   toggleSidebar() {
     this.toggleSidebarForMe.emit();
+  }
+
+  openNewsLink() {
+    window.open('https://maplestory.nexon.net/news', '_blank');
   }
 }

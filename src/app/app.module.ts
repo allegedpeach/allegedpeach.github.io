@@ -21,6 +21,7 @@ import { HexaComponent } from './hexa/hexa.component';
 import { IncomeComponent } from './income/income.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { InformationComponent } from './information/information.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { InformationComponent } from './information/information.component';
     NgOptimizedImage,
     MatButtonModule,
     NgbModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

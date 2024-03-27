@@ -3,10 +3,6 @@ mat-toolbar {
   background: rgb(238, 211, 217);
 }
 
-li {
-  list-style: none;
-}
-
 button {
   border: 0;
   outline: none;
@@ -15,9 +11,6 @@ button {
 
 .row {
   margin-left: auto;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
 }
 
 .user {
@@ -32,7 +25,20 @@ button {
   }
 
   .user-name {
-    padding-left: 15px;
+    padding-left: 10px;
   }
 }
 
+.centered-buttons {
+  margin-left: auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.center-button-icons {
+  display: flex;
+}
+
+.profileSettings {
+  font-size: 14px;
+}
